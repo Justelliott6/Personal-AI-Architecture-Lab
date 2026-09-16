@@ -1,0 +1,9 @@
+{
+  "active_provider": "b",
+  "rules": [
+    "Nothing may be published without explicit human approval."
+  ],
+  "approval_granted": false,
+  "conversation": [],
+  "decision_log": []
+}

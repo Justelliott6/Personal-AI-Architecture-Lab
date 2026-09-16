@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal AI Architecture Lab</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header><h1>Personal AI Architecture Lab</h1><p>The system is the brain. The LLM is a replaceable reasoning engine.</p></header>
+  <main>
+    <section class="panel controls">
+      <label>Active reasoning provider
+        <select id="provider"></select>
+      </label>
+      <button id="approval">Grant explicit human approval</button>
+      <span id="approvalState"></span>
+    </section>
+    <div class="columns">
+      <section class="panel">
+        <h2>Chat</h2>
+        <div id="chat"></div>
+        <form id="chatForm"><input id="message" autocomplete="off" placeholder="Try: please publish this..." required><button>Send</button></form>
+      </section>
+      <aside>
+        <section class="panel"><h2>System state</h2><pre id="state"></pre></section>
+        <section class="panel"><h2>Decision log</h2><div id="log"></div></section>
+      </aside>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
